@@ -1,0 +1,30 @@
+<body>
+  <h1 style=" margin-bottom: 30px; text-shadow: 30px; text-align: center;">Our Restaurant</h1>
+  <form class="form-inline search-bar">
+      <input class="form-control form-control-sm mr-sm-2 mt-sm-0" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  <div class="container" (click)="alertmsg()">
+      <div class="row">
+          <div class="col-md-4" *ngFor="let restaurant of rest">
+              <div class="card" (click)="checkLogin(restaurant)">
+                  <img src="{{restaurant.restPic}}" class="card-img-top" alt="Image 1">
+                  <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">
+                          &nbsp;
+                          {{restaurant.restName}}
+                      </h5>
+                      <p class="card-text">
+                          <i class="fas fa-map-marker-alt icon"></i>{{restaurant.restAddress}}
+                      </p>
+                      <p class="card-text">
+                          <i class="fas fa-phone icon"></i>{{restaurant.restContact}}
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>

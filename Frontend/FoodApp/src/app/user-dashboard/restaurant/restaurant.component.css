@@ -1,0 +1,46 @@
+.card {
+    margin-bottom: 20px;
+    border: 2px solid#08766969;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px#033b35;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 8px #087669;
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    margin-bottom: 5px;
+    display: none; /* Hide address by default */
+  }
+
+  .card:hover .card-text {
+    display: block; /* Show address on card hover */
+  }
+
+  .icon {
+    color: #1a080868;
+    margin-right: 5px;
+  }
+  .search-bar {
+    margin-bottom: 20px;
+    width:"30px";
+    margin-left: 1000px;
+    margin-top: 10px;
+  }
